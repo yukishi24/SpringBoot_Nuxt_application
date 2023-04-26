@@ -1,1 +1,1 @@
-# SpringBoot_Nuxt_application
+# java_application
