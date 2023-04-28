@@ -8,9 +8,8 @@ services:
       MYSQL_ROOT_PASSWORD: root
       TZ: Asia/Tokyo  #time-zoneの指定. 日本時間(東京)に設定 
     volumes:
-      - data-volume:/var/lib/mysql
+      - data:/var/lib/mysql
     ports:
       - 3306:3306
-
 volumes:
-  data-volume:
+  data:
