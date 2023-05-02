@@ -13,12 +13,6 @@ import org.springframework.format.annotation.DateTimeFormat;
  * @author yukishi
  *
  */
-
-/**
- * 新規ユーザー登録画面用のバインドレコード
- * @author yukishi
- *
- */
 public record SignupForm(
     String userId,
     String password,
