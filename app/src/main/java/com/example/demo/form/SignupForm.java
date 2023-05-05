@@ -22,27 +22,27 @@ import jakarta.validation.constraints.Pattern;
  *
  */
 public record SignupForm(
-	@NotBlank
-	@Email
+	@NotBlank(groups = ValidGroup1.class)
+	@Email(groups = ValidGroup2.class)
     String userId, 
     
-    @NotBlank
-    @Length(max = 100, min = 4)
-	@Pattern(regexp = "^[a-zA-Z0-9]+$")
+    @NotBlank(groups = ValidGroup1.class)
+    @Length(max = 100, min = 4, groups = ValidGroup2.class)
+	@Pattern(regexp = "^[a-zA-Z0-9]+$", groups = ValidGroup2.class)
     String password,
     
-    @NotBlank
+    @NotBlank(groups = ValidGroup1.class)
     String userName,
     
     @DateTimeFormat(pattern = "yyyy/MM/dd")
-	@NotNull
+	@NotNull(groups = ValidGroup1.class)
     Date birthday,
     
-    @Min(20)
-	@Max(100)
+    @Min(value = 20,groups = ValidGroup2.class)
+	@Max(value = 100, groups = ValidGroup2.class)
     Integer age,
     
-    @NotNull
+    @NotNull(groups = ValidGroup1.class)
     Integer gender
     ) {
 
