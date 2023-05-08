@@ -35,6 +35,10 @@ dependencies {
 	implementation 'org.webjars:bootstrap:4.5.3'
 	// https://mvnrepository.com/artifact/org.webjars/webjars-locator
 	implementation 'org.webjars:webjars-locator:0.40'
+	// https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
+	implementation 'org.mybatis:mybatis-spring:2.0.6'
+	// https://mvnrepository.com/artifact/org.modelmapper.extensions/modelmapper-spring
+	implementation 'org.modelmapper.extensions:modelmapper-spring:2.3.5'
 }
 
 tasks.named('test') {
