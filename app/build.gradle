@@ -24,6 +24,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	runtimeOnly 'com.mysql:mysql-connector-j'
@@ -35,6 +36,8 @@ dependencies {
 	implementation 'org.webjars:bootstrap:4.5.3'
 	// https://mvnrepository.com/artifact/org.webjars/webjars-locator
 	implementation 'org.webjars:webjars-locator:0.40'
+	// https://mvnrepository.com/artifact/org.modelmapper.extensions/modelmapper-spring
+	implementation 'org.modelmapper.extensions:modelmapper-spring:2.3.5'
 }
 
 tasks.named('test') {
